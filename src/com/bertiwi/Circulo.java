@@ -2,13 +2,12 @@ package com.bertiwi;
 
 public class Circulo {
     private double radio;
-    private Posicion posicion;
+    private Posicion centro;
 
-    public Circulo(double radio, Posicion posicion) {
+    public Circulo(double radio, Posicion centro) {
         this.radio = radio;
-        this.posicion = posicion;
+        this.centro = centro;
     }
-
 
     public static void area(){}
     public static void perimetro(){}
