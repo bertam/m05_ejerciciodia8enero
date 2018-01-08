@@ -1,16 +1,20 @@
 package com.bertiwi;
 
-public class Rectangulo {
-    private int base;
-    private int altura;
+public class Rectangulo extends Poligono implements Figura{
     private Posicion centro;
 
-    public Rectangulo(int base, int altura, Posicion centro) {
-        this.base = base;
-        this.altura = altura;
+    public Rectangulo(int altura, int base, Posicion centro) {
+        super(altura, base);
         this.centro = centro;
     }
 
-    public static void area(){}
-    public static void perimetro(){}
+    @Override
+    public double area() {
+        return 0;
+    }
+
+    @Override
+    public double perimetro() {
+        return 0;
+    }
 }
